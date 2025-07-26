@@ -24,5 +24,5 @@ app.use("/api/v1", userApis);
 app.use("/api/v1",taskApis);
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server started at port ${process.env.PORT}`);
+  console.log(`Server started `);
 });
