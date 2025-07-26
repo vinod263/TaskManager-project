@@ -16,7 +16,7 @@ const AddTask = ({setaddTaskDiv}) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:1000/api/v1/addtasks`,
+        `https://taskmanager-project-qgba.onrender.comapi/v1/addtasks`,
         Values,
         { withCredentials: true }
       );

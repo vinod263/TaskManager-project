@@ -16,7 +16,7 @@ const Dashboard = () => {
     const fechUserDetails = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:1000/api/v1/userDetails`,
+          `https://taskmanager-project-qgba.onrender.comapi/v1/userDetails`,
 
           { withCredentials: true, }
         );

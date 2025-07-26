@@ -16,7 +16,7 @@
 //   useEffect(() => {
 //   const fetch = async () => {
 //     try {
-//       const res = await axios.get(`http://localhost:1000/api/v1/gettasks/${EditTaskId}`, {
+//       const res = await axios.get(`https://taskmanager-project-qgba.onrender.comapi/v1/gettasks/${EditTaskId}`, {
 //         withCredentials: true,
 //       });
 //       setValues(res.data.taskDetails);
@@ -32,7 +32,7 @@
 //   e.preventDefault();
 //   try {
 //     const res = await axios.put(
-//       `http://localhost:1000/api/v1/edittasks/${id}`,
+//       `https://taskmanager-project-qgba.onrender.comapi/v1/edittasks/${id}`,
 //       Values,
 //       { withCredentials: true }
 //     );
@@ -51,7 +51,7 @@
 //     e.preventDefault();
 //     try {
 //       const res = await axios.delete(
-//         `http://localhost:1000/api/v1/deletetasks/${id}`,
+//         `https://taskmanager-project-qgba.onrender.comapi/v1/deletetasks/${id}`,
 //         { withCredentials: true }
 //       );
 //       alert(res.data.success);
@@ -170,7 +170,7 @@ const EditTask = ({ setEditTaskDiv, EditTaskId }) => {
     if (!EditTaskId) return;
     const fetch = async () => {
       try {
-        const res = await axios.get(`http://localhost:1000/api/v1/gettasks/${EditTaskId}`, {
+        const res = await axios.get(`https://taskmanager-project-qgba.onrender.comapi/v1/gettasks/${EditTaskId}`, {
           withCredentials: true,
         });
         setValues(res.data.taskDetails);
@@ -190,7 +190,7 @@ const EditTask = ({ setEditTaskDiv, EditTaskId }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:1000/api/v1/edittasks/${EditTaskId}`,
+        `https://taskmanager-project-qgba.onrender.comapi/v1/edittasks/${EditTaskId}`,
         Values,
         { withCredentials: true }
       );
@@ -207,7 +207,7 @@ const EditTask = ({ setEditTaskDiv, EditTaskId }) => {
     e.preventDefault();
     try {
       const res = await axios.delete(
-        `http://localhost:1000/api/v1/deletetasks/${EditTaskId}`,
+        `https://taskmanager-project-qgba.onrender.comapi/v1/deletetasks/${EditTaskId}`,
         { withCredentials: true }
       );
       alert(res.data.success);
