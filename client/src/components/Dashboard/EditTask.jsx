@@ -34,7 +34,7 @@ const EditTask = ({ setEditTaskDiv, EditTaskId }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `https://taskmanager-project-qgba.onrender.comapi/v1/edittasks/${EditTaskId}`,
+        `https://taskmanager-project-qgba.onrender.com/api/v1/edittasks/${EditTaskId}`,
         Values,
         { withCredentials: true }
       );
@@ -51,7 +51,7 @@ const EditTask = ({ setEditTaskDiv, EditTaskId }) => {
     e.preventDefault();
     try {
       const res = await axios.delete(
-        `https://taskmanager-project-qgba.onrender.comapi/v1/deletetasks/${EditTaskId}`,
+        `https://taskmanager-project-qgba.onrender.com/api/v1/deletetasks/${EditTaskId}`,
         { withCredentials: true }
       );
       alert(res.data.success);
