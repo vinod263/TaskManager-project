@@ -8,7 +8,7 @@ const navigate = useNavigate();
   const logout = async ()=> {
     try {
       const res = await axios.post(
-        `https://taskmanager-project-qgba.onrender.comapi/v1/logout`,
+        `https://taskmanager-project-qgba.onrender.com/api/v1/logout`,
        {},
        {withCredentials:true}
       );
